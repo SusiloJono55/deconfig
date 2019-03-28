@@ -60,8 +60,11 @@ func OptionMethod(next http.Handler) http.Handler {
 
 func hasOwner(next http.Handler) http.Handler {
 	fn := func(w http.ResponseWriter, r *http.Request) {
-		owner := r.Header.Get("owner")
-		if owner == "" {
+		key := http.CanonicalHeaderKey("owner")
+		var owner string
+		if v := r.Header[key]; len(v) > 0 {
+			owner = v[0]
+		} else {
 			http.Error(w, http.StatusText(http.StatusUnauthorized), http.StatusUnauthorized)
 			return
 		}
