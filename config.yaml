@@ -1,0 +1,164 @@
+info:
+  MSSql:
+    dbtype: 0
+    fields:
+      c_name:
+        label: Connection Name
+        type: string
+        value: ""
+      c_type:
+        label: Connection Type
+        type: string
+        value: MSSql
+      database:
+        label: Database Name
+        type: string
+        value: ""
+      host:
+        label: Host
+        type: string
+        value: ""
+      instance:
+        label: Instance
+        type: string
+        value: ""
+      password:
+        label: Password
+        type: password
+        value: ""
+      port:
+        label: Port
+        type: int
+        value: ""
+      username:
+        label: Username
+        type: string
+        value: ""
+  Oracle:
+    dbtype: 1
+    fields:
+      c_name:
+        label: Connection Name
+        type: string
+        value: ""
+      c_type:
+        label: Connection Type
+        type: string
+        value: Oracle
+      database:
+        label: Database Name
+        type: string
+        value: ""
+      host:
+        label: Host
+        type: string
+        value: ""
+      password:
+        label: Password
+        type: password
+        value: ""
+      port:
+        label: Port
+        type: int
+        value: ""
+      sid:
+        label: SID
+        type: string
+        value: ""
+      username:
+        label: Username
+        type: string
+        value: ""
+  Postgresql:
+    dbtype: 2
+    fields:
+      c_name:
+        label: Connection Name
+        type: string
+        value: ""
+      c_type:
+        label: Connection Type
+        type: string
+        value: Postgresql
+      database:
+        label: Database Name
+        type: string
+        value: ""
+      host:
+        label: Host
+        type: string
+        value: ""
+      password:
+        label: Password
+        type: password
+        value: ""
+      port:
+        label: Port
+        type: int
+        value: ""
+      username:
+        label: Username
+        type: string
+        value: ""
+  MySQL:
+    dbtype: 3
+    fields:
+      c_name:
+        label: Connection Name
+        type: string
+        value: ""
+      c_type:
+        label: Connection Type
+        type: string
+        value: MySQL
+      database:
+        label: Database Name
+        type: string
+        value: ""
+      host:
+        label: Host
+        type: string
+        value: ""
+      password:
+        label: Password
+        type: password
+        value: ""
+      port:
+        label: Port
+        type: int
+        value: ""
+      username:
+        label: Username
+        type: string
+        value: ""
+  DB2:
+    dbtype: 4
+    fields:
+      c_name:
+        label: Connection Name
+        type: string
+        value: ""
+      c_type:
+        label: Connection Type
+        type: string
+        value: DB2
+      database:
+        label: Database Name
+        type: string
+        value: ""
+      host:
+        label: Host
+        type: string
+        value: ""
+      password:
+        label: Password
+        type: password
+        value: ""
+      port:
+        label: Port
+        type: int
+        value: ""
+      username:
+        label: Username
+        type: string
+        value: ""

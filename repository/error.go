@@ -1,4 +1,4 @@
-package main
+package repository
 
 import (
 	"net/http"
@@ -34,6 +34,15 @@ func ErrRender(err error) render.Renderer {
 		Err:            err,
 		HTTPStatusCode: 422,
 		StatusText:     "Error rendering response.",
+		ErrorText:      err.Error(),
+	}
+}
+
+func SetRenderer(err error, statusCode int, statusText string) render.Renderer {
+	return &ErrResponse{
+		Err:            err,
+		HTTPStatusCode: statusCode,
+		StatusText:     statusText,
 		ErrorText:      err.Error(),
 	}
 }
