@@ -1,6 +1,7 @@
 info:
   MSSql:
     dbtype: 0
+    testtype: sqlserver
     fields:
       c_name:
         label: Connection Name
@@ -36,6 +37,7 @@ info:
         value: ""
   Oracle:
     dbtype: 1
+    testtype: oracle
     fields:
       c_name:
         label: Connection Name
@@ -71,6 +73,7 @@ info:
         value: ""
   Postgresql:
     dbtype: 2
+    testtype: postgres
     fields:
       c_name:
         label: Connection Name
@@ -102,6 +105,7 @@ info:
         value: ""
   MySQL:
     dbtype: 3
+    testtype: mysql
     fields:
       c_name:
         label: Connection Name
@@ -133,6 +137,7 @@ info:
         value: ""
   DB2:
     dbtype: 4
+    testtype: db2
     fields:
       c_name:
         label: Connection Name

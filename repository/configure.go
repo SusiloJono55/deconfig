@@ -1,7 +1,6 @@
 package repository
 
 import (
-	b64 "encoding/base64"
 	"fmt"
 	"log"
 	"time"
@@ -112,15 +111,8 @@ func NewConfiguration(_name, _owner string, _type DBType, _value ReqBody) *Confi
 func (conf *Config) MapConfig(_value ReqBody) {
 	value := map[string]interface{}{}
 	reqValue := _value
-	var password string
-	oldPass, oldOk := conf.Value["password"]
-	if oldOk && oldPass == reqValue.Password {
-		password = reqValue.Password
-	} else {
-		password = b64.StdEncoding.EncodeToString([]byte(reqValue.Password))
-	}
 	value["username"] = reqValue.Username
-	value["password"] = password
+	value["password"] = reqValue.Password
 	value["host"] = reqValue.Host
 	value["port"] = reqValue.Port
 	switch conf.Type {
